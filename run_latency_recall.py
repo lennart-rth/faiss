@@ -2,155 +2,146 @@ import os
 import subprocess
 import numpy as np
 import json
-import struct
+import shutil
 
+PAT = 6
 # ================= CONFIGURATION =================
-# We sweep 'efSearch'. 
-# Low values = Fast but imprecise. High values = Slow but accurate.
-SWEEP_PARAMS = [4,8,16, 32, 64, 128]
-EXP_NAME = "hnsw"
-
 CONFIG = {
-    "binary_path": "experiments/build/efficiency",
+    # Experiment Settings
+    "exp_name": f"naiveES-{PAT}",          # Name for this run (output filename)
+    "use_naive_es": True,               # Enable your C++ modification?
+    "patience": PAT,                    # How many steps to wait
+    "enable_logging": False,            # Write per-step CSVs? (Slows down search!)
+
+    # Binary & Data Paths
+    "binary_path": "experiments/build/latency_recall",  # Path to compiled C++ binary
     "ground_truth_path": "sift1M/sift_groundtruth.ivecs",
-    "results_bin_path": f"results/{EXP_NAME}.bin",
-    "output_dir": "results/latency_recall",
+    "results_dir": "results/latency_recall",
+    
+    # HNSW Parameters
     "M": 32,
     "efConstruction": 40,
+    "efSearch_list": "4,8,16,32,64,128",
     "k": 10,
-    "n_queries": 10000  # Use all 10k queries for stable stats
+    "n_queries": 10000
 }
 # =================================================
 
 def read_ivecs(fname):
-    """
-    Reads a standard .ivecs file (the format used for SIFT1M Ground Truth).
-    Returns a numpy array of shape (n_queries, n_neighbors).
-    """
+    """Parses standard .ivecs file format"""
     if not os.path.exists(fname):
-        print(f"Error: Ground truth file not found at {fname}")
+        print(f"Error: GT file {fname} not found.")
         exit(1)
-        
     a = np.fromfile(fname, dtype='int32')
-    d = a[0] # The first 4 bytes indicate dimension (number of neighbors provided)
-    # The file format is [d, id1, id2, ... id_d, d, id1, ...]
-    # We reshape it to rows of (d + 1) columns, then drop the first column (which is just 'd')
+    d = a[0]
     return a.reshape(-1, d + 1)[:, 1:].copy()
 
-def compute_recall_at_k(results, ground_truth, k):
-    """
-    Computes Recall@K (Intersection / K).
-    Since we ask for top-K candidates, we check how many of the *actual* top-K
-    are present in our results.
-    """
-    n_queries = results.shape[0]
-    recall_sum = 0
+def compute_recall(results_bin_path, gt_indices, k, n_queries):
+    """Reads binary output from C++ and compares with Ground Truth"""
+    if not os.path.exists(results_bin_path):
+        print(f"Warning: Result file {results_bin_path} missing!")
+        return 0.0
+        
+    with open(results_bin_path, "rb") as f:
+        data = f.read()
+        indices = np.frombuffer(data, dtype=np.int64) # faiss::idx_t is int64
+        indices = indices.reshape(n_queries, k)
     
-    # Slice to top-K just in case
-    GT = ground_truth[:, :k]
-    I = results[:, :k]
+    recall_sum = 0
+    GT = gt_indices[:, :k]
+    I = indices[:, :k]
     
     for i in range(n_queries):
-        # Intersection of two sets
-        # (Using python sets is fast enough for 10k queries with small k)
-        truth_set = set(GT[i])
-        found_set = set(I[i])
-        recall_sum += len(truth_set.intersection(found_set))
+        recall_sum += len(set(GT[i]).intersection(set(I[i])))
         
     return recall_sum / (n_queries * k)
 
-def run_single_experiment(efSearch):
-    """
-    Runs the C++ binary for a specific parameter setting.
-    Returns: (latency_ms, indices_array)
-    """
+def main():
+    # 1. Setup Directories
+    os.makedirs(CONFIG["results_dir"], exist_ok=True)
+    
+    # Output file: results/latency_recall/naiveES-200.json
+    output_json = os.path.join(CONFIG["results_dir"], f"{CONFIG['exp_name']}.json")
+
+    # 2. Load Ground Truth
+    print(f"Loading Ground Truth from {CONFIG['ground_truth_path']}...")
+    gt_indices = read_ivecs(CONFIG['ground_truth_path'])
+
+    # 3. Prepare Command
     cmd = [
         CONFIG["binary_path"],
         "--data", "sift1M",
         "--M", str(CONFIG["M"]),
         "--efConstruction", str(CONFIG["efConstruction"]),
-        "--efSearch", str(efSearch),
         "--k", str(CONFIG["k"]),
-        "--n_queries", str(CONFIG["n_queries"])
+        "--n_queries", str(CONFIG["n_queries"]),
+        "--efSearch", CONFIG["efSearch_list"],
+        "--result_dir", CONFIG["results_dir"], # Save bins directly here temporarily
+        "--exp_name", CONFIG["exp_name"]
     ]
 
-    my_env = os.environ.copy()
-    my_env["HNSW_ENABLE_LOGGING"] = "0"
+    # 4. Prepare Environment Variables
+    env_vars = os.environ.copy()
+    env_vars["HNSW_NAIVE_ES"] = "1" if CONFIG["use_naive_es"] else "0"
+    env_vars["HNSW_PATIENCE"] = str(CONFIG["patience"])
+    env_vars["HNSW_ENABLE_LOGGING"] = "1" if CONFIG["enable_logging"] else "0"
 
-    if EXP_NAME == "naiveES":
-        my_env["HNSW_NAIVE_ES"] = "0"
-        my_env["HNSW_PATIENCE"] = "0"
-    
-    # 1. Run C++ Binary
-    # We assume the binary prints "TIME_MS=123.45" to stdout
-    result = subprocess.run(cmd, capture_output=True, text=True, env=my_env)
-    
-    if result.returncode != 0:
-        print(f"Binary failed for ef={efSearch}!")
-        print(result.stderr)
-        return None, None
+    print(f"\n🚀 Running Sweep: {CONFIG['exp_name']}")
+    print(f"   - Naive ES: {CONFIG['use_naive_es']} (Patience: {CONFIG['patience']})")
+    print(f"   - Command: {' '.join(cmd)}\n")
 
-    # 2. Parse Latency from Stdout
-    latency_ms = None
-    for line in result.stdout.split('\n'):
-        if line.startswith("TIME_MS="):
-            latency_ms = float(line.split("=")[1])
-            break
-            
-    if latency_ms is None:
-        print(f"Could not find 'TIME_MS=' in output for ef={efSearch}")
-        return None, None
-        
-    # 3. Read Result Indices from Binary File
-    # The C++ code writes raw int64 (faiss::idx_t) to results/search_output.bin
-    with open(CONFIG["results_bin_path"], "rb") as f:
-        data = f.read()
-        indices = np.frombuffer(data, dtype=np.int64)
-        indices = indices.reshape(CONFIG["n_queries"], CONFIG["k"])
-        
-    return latency_ms, indices
-
-def main():
-    # Setup Output
-    os.makedirs(CONFIG["output_dir"], exist_ok=True)
-    out_file = os.path.join(CONFIG["output_dir"], f"{EXP_NAME}.json")
-    
-    # Load Ground Truth
-    print("Loading Ground Truth...")
-    gt_indices = read_ivecs(CONFIG["ground_truth_path"])
-    print(f"Ground Truth Loaded. Shape: {gt_indices.shape}")
+    # 5. Run Process
+    process = subprocess.Popen(
+        cmd, 
+        stdout=subprocess.PIPE, 
+        text=True, 
+        env=env_vars 
+    )
     
     results_log = []
-    
-    print(f"{'efSearch':<10} | {'Latency (ms/q)':<15} | {'Recall@10':<10}")
-    print("-" * 45)
-    
-    for ef in SWEEP_PARAMS:
-        total_time_ms, indices = run_single_experiment(ef)
-        
-        if indices is None:
-            continue
-            
-        # Calc Recall
-        recall = compute_recall_at_k(indices, gt_indices, CONFIG["k"])
-        
-        # Calc Latency per Query
-        latency_per_query = total_time_ms / CONFIG["n_queries"]
-        
-        print(f"{ef:<10} | {latency_per_query:<15.4f} | {recall:<10.4f}")
-        
-        results_log.append({
-            "efSearch": ef,
-            "latency_ms": latency_per_query,
-            "recall": recall,
-            "k": CONFIG["k"]
-        })
 
-    # Save Results
-    with open(out_file, "w") as f:
+    # 6. Parse C++ Output
+    while True:
+        line = process.stdout.readline()
+        if not line and process.poll() is not None:
+            break
+        if line:
+            # print(line.strip()) # Uncomment to see raw C++ output
+            
+            # Expected C++ Output format: 
+            # RESULT: efSearch=16 TIME_MS=123.4 FILE=results/...
+            if line.startswith("RESULT:"):
+                try:
+                    parts = line.split()
+                    ef = int(parts[1].split("=")[1])
+                    time_ms = float(parts[2].split("=")[1])
+                    bin_file = parts[3].split("=")[1]
+                    
+                    recall = compute_recall(bin_file, gt_indices, CONFIG["k"], CONFIG["n_queries"])
+                    latency = time_ms / CONFIG["n_queries"]
+                    
+                    print(f"   -> efSearch={ef:<4} | Latency={latency:.5f}ms | Recall={recall:.5f}")
+
+                    # EXACT JSON STRUCTURE REQUESTED
+                    results_log.append({
+                        "efSearch": ef,
+                        "latency_ms": latency,
+                        "recall": recall,
+                        "k": CONFIG["k"]
+                    })
+                    
+                    # Optional: Cleanup the temporary .bin file to save space
+                    # if os.path.exists(bin_file):
+                    #     os.remove(bin_file)
+
+                except Exception as e:
+                    print(f"   [Error Parsing Line]: {e}")
+
+    # 7. Save Final JSON
+    with open(output_json, "w") as f:
         json.dump(results_log, f, indent=4)
-        
-    print(f"\nSweep complete. Data saved to {out_file}")
+
+    print(f"\n✅ Experiment Complete. Data saved to {output_json}")
 
 if __name__ == "__main__":
     main()

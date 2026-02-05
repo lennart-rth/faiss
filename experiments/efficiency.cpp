@@ -53,6 +53,8 @@ int main(int argc, char** argv) {
     int k = get_arg(argc, argv, "--k", 10);
     int n_queries = get_arg(argc, argv, "--n_queries", 5);
     std::string data_dir = get_arg_str(argc, argv, "--data", "sift1M");
+    std::string result_dir = get_arg_str(argc, argv, "--result_dir", "undefined_exp");
+    std::string exp_name = get_arg_str(argc, argv, "--exp_name", "undefined_exp");
 
     // 2. Load Data
     size_t d, nb, nq, d_ignore;
@@ -96,12 +98,12 @@ int main(int argc, char** argv) {
     struct stat st = {0};
     if (stat("results", &st) == -1) mkdir("results", 0700);
 
-    FILE* f_out = fopen("results/search_output.bin", "wb");
+    FILE* f_out = fopen((result_dir + "/" + exp_name + ".bin").c_str(), "wb");
     if (f_out) {
         fwrite(I.data(), sizeof(faiss::idx_t), n_queries * k, f_out);
         fclose(f_out);
     } else {
-        std::cerr << "Error writing results/search_output.bin" << std::endl;
+        std::cerr << "Error writing " << result_dir << "/" << exp_name << ".bin" << std::endl;
     }
 
     delete[] xb;

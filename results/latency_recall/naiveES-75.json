@@ -1,0 +1,38 @@
+[
+    {
+        "efSearch": 4,
+        "latency_ms": 0.0180529,
+        "recall": 0.6163,
+        "k": 10
+    },
+    {
+        "efSearch": 8,
+        "latency_ms": 0.0284958,
+        "recall": 0.75256,
+        "k": 10
+    },
+    {
+        "efSearch": 16,
+        "latency_ms": 0.0442087,
+        "recall": 0.86298,
+        "k": 10
+    },
+    {
+        "efSearch": 32,
+        "latency_ms": 0.063309,
+        "recall": 0.93738,
+        "k": 10
+    },
+    {
+        "efSearch": 64,
+        "latency_ms": 0.0973692,
+        "recall": 0.97708,
+        "k": 10
+    },
+    {
+        "efSearch": 128,
+        "latency_ms": 0.15353699999999998,
+        "recall": 0.99119,
+        "k": 10
+    }
+]

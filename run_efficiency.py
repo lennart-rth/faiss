@@ -15,6 +15,7 @@ EXP_CONFIG = {
 }
 
 PATHS = {
+    "exp_name": "efficiency_analysis",
     "exp_src_dir": "experiments",
     "exp_build_dir": "experiments/build",
     "results_dir": "results/efficiency",
@@ -51,7 +52,9 @@ def run_cpp_experiment():
         "--efSearch", str(EXP_CONFIG["efSearch"]),
         "--k", str(EXP_CONFIG["k"]),
         "--n_queries", str(EXP_CONFIG["n_queries"]),
-        "--data", EXP_CONFIG["data_dir"]
+        "--data", EXP_CONFIG["data_dir"],
+        "--result_dir", PATHS["results_dir"],
+        "--exp_name", f"{EXP_CONFIG['exp_name']}"
     ]
 
     my_env = os.environ.copy()

@@ -632,12 +632,14 @@ int search_from_candidates(
         int level,
         int nres_in,
         const SearchParameters* params) {
+    
     int nres = nres_in;
     int ndis = 0;
 
-    // --- LOGGING SETUP ---
+    // =========================================================
+    // 1. LOGGING SETUP (Existing)
+    // =========================================================
     // Only log for the first 100 queries to save disk space/time
-    // We assume the Python script created the folder "results/efficiency/"
     size_t query_id = query_log_counter.fetch_add(1);
     std::ofstream log_file;
     static bool logging_enabled = (std::getenv("HNSW_ENABLE_LOGGING") != nullptr);
@@ -646,27 +648,24 @@ int search_from_candidates(
     if (do_log) {
         std::string fname = "results/efficiency/log_q_" + std::to_string(query_id) + ".csv";
         log_file.open(fname);
-        // Header: computations, current_kth_distance
         log_file << "ndis,radius\n";
     }
-    // ---------------------
 
-    // --- EXPERIMENT: NAIVE EARLY STOPPING SETUP ---
-    // 1. Check if Naive ES is enabled via Env Var (0 or 1)
+    // =========================================================
+    // 2. NAIVE EARLY STOPPING SETUP (New)
+    // =========================================================
     static bool use_naive_es = [](){
         const char* s = std::getenv("HNSW_NAIVE_ES");
         return s && std::atoi(s) == 1;
     }();
 
-    // 2. Read Patience (default to something safe like 1000 if not set)
     static int es_patience = [](){
         const char* s = std::getenv("HNSW_PATIENCE");
-        return s ? std::atoi(s) : 20; // Default patience 20
+        return s ? std::atoi(s) : 20; // Default patience
     }();
 
-    // 3. Initialize counter
     int no_improvement_counter = 0;
-    // ----------------------------------------------
+    // =========================================================
 
     bool do_dis_check;
     int efSearch;
@@ -723,6 +722,9 @@ int search_from_candidates(
 
         int counter = 0;
         size_t saved_j[4];
+        
+        // Track if we improved in this specific expansion step
+        bool improved_in_this_step = false;
 
         threshold = res.threshold;
 
@@ -732,6 +734,7 @@ int search_from_candidates(
                     if (res.add_result(dis, idx)) {
                         threshold = res.threshold;
                         nres += 1;
+                        improved_in_this_step = true;
                     }
                 }
             }
@@ -781,6 +784,21 @@ int search_from_candidates(
             log_file << ndis << "," << threshold << "\n";
         }
         // --------------------
+
+        // --- NAIVE EARLY STOPPING CHECK ---
+        // Only run this logic on the base level (where fine-grained search happens)
+        if (use_naive_es && level == 0) {
+            if (improved_in_this_step) {
+                no_improvement_counter = 0; // Reset counter
+            } else {
+                no_improvement_counter++;   // Increment counter
+            }
+
+            if (no_improvement_counter >= es_patience) {
+                break; // Stop the search early!
+            }
+        }
+        // ----------------------------------
 
         nstep++;
         if (!do_dis_check && nstep > efSearch) {

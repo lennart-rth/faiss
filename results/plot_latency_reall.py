@@ -1,75 +1,89 @@
 import os
 import json
 import matplotlib.pyplot as plt
+import glob
 
 # ================= CONFIGURATION =================
-CONFIG = {
-    "results_file": "results/latency_recall/sweep_results.json",
-    "output_plot": "results/latency_recall/latency_recall_plot.png",
-    "title": "HNSW Trade-off: Latency vs. Recall",
-    "x_label": "Recall@10",
-    "y_label": "Latency per Query (ms)"
-}
+RESULTS_DIR = "latency_recall"
+OUTPUT_FILENAME = "latency_recall_comparison.png"
 # =================================================
 
-def load_data(filepath):
-    if not os.path.exists(filepath):
-        print(f"Error: Results file not found at {filepath}")
-        print("Did you run 'run_sweep.py' first?")
-        exit(1)
+def load_data(results_dir):
+    """
+    Reads all .json files in the directory.
+    Returns a dict: { "filename_without_extension": [data_points] }
+    """
+    all_data = {}
+    
+    # Find all json files
+    json_pattern = os.path.join(results_dir, "*.json")
+    files = glob.glob(json_pattern)
+    
+    if not files:
+        print(f"No JSON files found in {results_dir}")
+        return {}
+
+    for filepath in files:
+        filename = os.path.basename(filepath)
+        exp_name = os.path.splitext(filename)[0] 
         
-    with open(filepath, 'r') as f:
-        data = json.load(f)
-    return data
+        try:
+            with open(filepath, 'r') as f:
+                data = json.load(f)
+                
+            if isinstance(data, list) and len(data) > 0 and "recall" in data[0]:
+                data.sort(key=lambda x: x["recall"])
+                all_data[exp_name] = data
+            else:
+                print(f"Skipping {filename}: Invalid format or empty.")
+                
+        except Exception as e:
+            print(f"Error reading {filename}: {e}")
+            
+    return all_data
 
-def plot_tradeoff(data):
-    # Extract points
-    # Sort by recall to ensure the line connects correctly
-    # (HNSW behavior usually implies higher efSearch = higher recall)
-    data.sort(key=lambda x: x["recall"])
-
-    recalls = [d["recall"] for d in data]
-    latencies = [d["latency_ms"] for d in data]
-    ef_values = [d["efSearch"] for d in data]
-
-    # Plot Setup
-    plt.figure(figsize=(10, 6))
+def plot_comparison(all_data):
+    plt.figure(figsize=(10, 7))
     
-    # 1. Main Line
-    plt.plot(recalls, latencies, marker='o', linestyle='-', linewidth=2, color='#1f77b4', label='HNSW Index')
-
-    # 2. Annotate specific points (efSearch values)
-    # We annotate every other point to avoid clutter if there are many
-    for i, ef in enumerate(ef_values):
-        # Annotate specific key points (start, end, and some middle ones)
-        if i == 0 or i == len(ef_values)-1 or i % 2 == 0:
-            plt.annotate(f"ef={ef}", 
-                         (recalls[i], latencies[i]), 
-                         textcoords="offset points", 
-                         xytext=(0, 10), 
-                         ha='center',
-                         fontsize=9,
-                         fontweight='bold',
-                         alpha=0.7)
-
-    # 3. Styling
-    plt.xlabel(CONFIG["x_label"], fontsize=12)
-    plt.ylabel(CONFIG["y_label"], fontsize=12)
-    plt.title(CONFIG["title"], fontsize=14)
-    plt.grid(True, which='both', linestyle='--', alpha=0.6)
+    # Define a set of markers to cycle through
+    markers = ['o', 's', '^', 'D', 'v', '<', '>', 'p', '*']
     
-    # Optional: Highlight the "Pareto Frontier" feel (Top Right is usually bad)
-    # Usually we want High Recall (Right) and Low Latency (Down) -> Bottom Right is ideal
+    # --- MODIFICATION: SORT KEYS ALPHABETICALLY ---
+    sorted_exp_names = sorted(all_data.keys())
+    
+    for i, exp_name in enumerate(sorted_exp_names):
+        points = all_data[exp_name]
+        
+        recalls = [p["recall"] for p in points]
+        latencies = [p["latency_ms"] for p in points]
+        
+        # Select marker based on index
+        marker = markers[i % len(markers)]
+        
+        # Plot line
+        plt.plot(recalls, latencies, marker=marker, markersize=5, 
+                 linewidth=2, label=exp_name, alpha=0.8)
+
+    # Styling
+    plt.xlabel("Recall@10", fontsize=12)
+    plt.ylabel("Latency (ms)", fontsize=12)
+    plt.title("HNSW Latency vs. Recall Comparison", fontsize=14)
+    plt.grid(True, which="both", linestyle="--", alpha=0.6)
+    
+    # Legend will now automatically follow the plot order (Alphabetical)
+    plt.legend(title="Experiment Name")
     
     plt.tight_layout()
     
-    # 4. Save
-    os.makedirs(os.path.dirname(CONFIG["output_plot"]), exist_ok=True)
-    plt.savefig(CONFIG["output_plot"], dpi=300)
-    print(f"Plot saved to: {CONFIG["output_plot"]}")
+    plt.savefig(OUTPUT_FILENAME, dpi=300)
+    print(f"Plot saved to {OUTPUT_FILENAME}")
     plt.show()
 
 if __name__ == "__main__":
-    print("Generating Plot...")
-    data = load_data(CONFIG["results_file"])
-    plot_tradeoff(data)
+    print(f"Reading data from {RESULTS_DIR}...")
+    data = load_data(RESULTS_DIR)
+    
+    if data:
+        plot_comparison(data)
+    else:
+        print("No valid data found to plot.")
