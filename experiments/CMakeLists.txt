@@ -18,6 +18,10 @@ find_library(BLAS_LIB openblas) # On NixOS, typically libopenblas
 # Define the executable
 add_executable(efficiency efficiency.cpp)
 add_executable(latency_recall latency_recall.cpp)
+add_executable(sample sample.cpp)
+add_executable(calibrate calibrate.cpp)
+add_executable(search search.cpp)
+add_executable(simple simple_hnsw.cpp)
 
 # Link libraries
 # We link directly against the static libfaiss.a found in ../build/faiss/
@@ -29,6 +33,34 @@ target_link_libraries(efficiency
 )
 
 target_link_libraries(latency_recall 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(sample 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(calibrate 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(search 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(simple 
     PRIVATE 
     "${FAISS_ROOT}/build/faiss/libfaiss.a" 
     ${BLAS_LIB}

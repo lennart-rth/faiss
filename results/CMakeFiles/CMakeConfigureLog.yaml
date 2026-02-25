@@ -1,0 +1,2373 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/uname"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/uname"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/uname"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/uname"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/uname"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/uname"
+    found: "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:49 (project)"
+    message: |
+      The system is: Linux - 6.6.117 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gmake"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gmake"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gmake"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gmake"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gmake"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gmake"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gmake"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gmake"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gmake"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gmake"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gmake"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gmake"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gmake"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gmake"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gmake"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gmake"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gmake"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gmake"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gmake"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gmake"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gmake"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gmake"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gmake"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gmake"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gmake"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gmake"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gmake"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gmake"
+      - "/run/wrappers/bin/gmake"
+      - "/home/lennart/.nix-profile/bin/gmake"
+      - "/nix/profile/bin/gmake"
+      - "/home/lennart/.local/state/nix/profile/bin/gmake"
+      - "/etc/profiles/per-user/lennart/bin/gmake"
+      - "/nix/var/nix/profiles/default/bin/gmake"
+      - "/run/current-system/sw/bin/gmake"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/make"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/make"
+    found: "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++"
+    candidate_directories:
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/"
+    found: "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{CMAKE_INCLUDE_PATH}:
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include"
+        - "/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include"
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:49 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/4.1.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/readelf"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/dlltool"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/dlltool"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/dlltool"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/dlltool"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/dlltool"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/dlltool"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/dlltool"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/dlltool"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/dlltool"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/dlltool"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/dlltool"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/dlltool"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/dlltool"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/dlltool"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/dlltool"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/dlltool"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/dlltool"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/dlltool"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/dlltool"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/dlltool"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/dlltool"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/dlltool"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/dlltool"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/dlltool"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/dlltool"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/dlltool"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/dlltool"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/dlltool"
+      - "/run/wrappers/bin/dlltool"
+      - "/home/lennart/.nix-profile/bin/dlltool"
+      - "/nix/profile/bin/dlltool"
+      - "/home/lennart/.local/state/nix/profile/bin/dlltool"
+      - "/etc/profiles/per-user/lennart/bin/dlltool"
+      - "/nix/var/nix/profiles/default/bin/dlltool"
+    found: "/run/current-system/sw/bin/dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    found: "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/tapi"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/tapi"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/tapi"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/tapi"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/tapi"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/tapi"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/tapi"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/tapi"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/tapi"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/tapi"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/tapi"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/tapi"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/tapi"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/tapi"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/tapi"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/tapi"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/tapi"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/tapi"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/tapi"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/tapi"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/tapi"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/tapi"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/tapi"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/tapi"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/tapi"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/tapi"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/tapi"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/tapi"
+      - "/run/wrappers/bin/tapi"
+      - "/home/lennart/.nix-profile/bin/tapi"
+      - "/nix/profile/bin/tapi"
+      - "/home/lennart/.local/state/nix/profile/bin/tapi"
+      - "/etc/profiles/per-user/lennart/bin/tapi"
+      - "/nix/var/nix/profiles/default/bin/tapi"
+      - "/run/current-system/sw/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:18 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ar-14.3"
+      - "gcc-ar-14"
+      - "gcc-ar14"
+      - "gcc-ar"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ar-14.3"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ar-14.3"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ar-14.3"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ar-14.3"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ar-14.3"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ar-14.3"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ar-14.3"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ar-14.3"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ar-14.3"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ar-14.3"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ar-14.3"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ar-14.3"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ar-14.3"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ar-14.3"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ar-14.3"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ar-14.3"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ar-14.3"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ar-14.3"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ar-14.3"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ar-14.3"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ar-14.3"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ar-14.3"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ar-14.3"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ar-14.3"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ar-14.3"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ar-14.3"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ar-14.3"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ar-14.3"
+      - "/run/wrappers/bin/gcc-ar-14.3"
+      - "/home/lennart/.nix-profile/bin/gcc-ar-14.3"
+      - "/nix/profile/bin/gcc-ar-14.3"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ar-14.3"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ar-14.3"
+      - "/nix/var/nix/profiles/default/bin/gcc-ar-14.3"
+      - "/run/current-system/sw/bin/gcc-ar-14.3"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ar-14"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ar-14"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ar-14"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ar-14"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ar-14"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ar-14"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ar-14"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ar-14"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ar-14"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ar-14"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ar-14"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ar-14"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ar-14"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ar-14"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ar-14"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ar-14"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ar-14"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ar-14"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ar-14"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ar-14"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ar-14"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ar-14"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ar-14"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ar-14"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ar-14"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ar-14"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ar-14"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ar-14"
+      - "/run/wrappers/bin/gcc-ar-14"
+      - "/home/lennart/.nix-profile/bin/gcc-ar-14"
+      - "/nix/profile/bin/gcc-ar-14"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ar-14"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ar-14"
+      - "/nix/var/nix/profiles/default/bin/gcc-ar-14"
+      - "/run/current-system/sw/bin/gcc-ar-14"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ar14"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ar14"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ar14"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ar14"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ar14"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ar14"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ar14"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ar14"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ar14"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ar14"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ar14"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ar14"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ar14"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ar14"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ar14"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ar14"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ar14"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ar14"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ar14"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ar14"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ar14"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ar14"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ar14"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ar14"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ar14"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ar14"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ar14"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ar14"
+      - "/run/wrappers/bin/gcc-ar14"
+      - "/home/lennart/.nix-profile/bin/gcc-ar14"
+      - "/nix/profile/bin/gcc-ar14"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ar14"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ar14"
+      - "/nix/var/nix/profiles/default/bin/gcc-ar14"
+      - "/run/current-system/sw/bin/gcc-ar14"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ar"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ar"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ar"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ar"
+    found: "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ar"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/Compiler/GNU-FindBinUtils.cmake:30 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:49 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gcc-ranlib-14.3"
+      - "gcc-ranlib-14"
+      - "gcc-ranlib14"
+      - "gcc-ranlib"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/"
+      - "/run/wrappers/bin/"
+      - "/home/lennart/.nix-profile/bin/"
+      - "/nix/profile/bin/"
+      - "/home/lennart/.local/state/nix/profile/bin/"
+      - "/etc/profiles/per-user/lennart/bin/"
+      - "/nix/var/nix/profiles/default/bin/"
+      - "/run/current-system/sw/bin/"
+    searched_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ranlib-14.3"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ranlib-14.3"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ranlib-14.3"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ranlib-14.3"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ranlib-14.3"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ranlib-14.3"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ranlib-14.3"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ranlib-14.3"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ranlib-14.3"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ranlib-14.3"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ranlib-14.3"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ranlib-14.3"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ranlib-14.3"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ranlib-14.3"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ranlib-14.3"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ranlib-14.3"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ranlib-14.3"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ranlib-14.3"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ranlib-14.3"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ranlib-14.3"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ranlib-14.3"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ranlib-14.3"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ranlib-14.3"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ranlib-14.3"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ranlib-14.3"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ranlib-14.3"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ranlib-14.3"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ranlib-14.3"
+      - "/run/wrappers/bin/gcc-ranlib-14.3"
+      - "/home/lennart/.nix-profile/bin/gcc-ranlib-14.3"
+      - "/nix/profile/bin/gcc-ranlib-14.3"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ranlib-14.3"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ranlib-14.3"
+      - "/nix/var/nix/profiles/default/bin/gcc-ranlib-14.3"
+      - "/run/current-system/sw/bin/gcc-ranlib-14.3"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ranlib-14"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ranlib-14"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ranlib-14"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ranlib-14"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ranlib-14"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ranlib-14"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ranlib-14"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ranlib-14"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ranlib-14"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ranlib-14"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ranlib-14"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ranlib-14"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ranlib-14"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ranlib-14"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ranlib-14"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ranlib-14"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ranlib-14"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ranlib-14"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ranlib-14"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ranlib-14"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ranlib-14"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ranlib-14"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ranlib-14"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ranlib-14"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ranlib-14"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ranlib-14"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ranlib-14"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ranlib-14"
+      - "/run/wrappers/bin/gcc-ranlib-14"
+      - "/home/lennart/.nix-profile/bin/gcc-ranlib-14"
+      - "/nix/profile/bin/gcc-ranlib-14"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ranlib-14"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ranlib-14"
+      - "/nix/var/nix/profiles/default/bin/gcc-ranlib-14"
+      - "/run/current-system/sw/bin/gcc-ranlib-14"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ranlib14"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ranlib14"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ranlib14"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ranlib14"
+      - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ranlib14"
+      - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin/gcc-ranlib14"
+      - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin/gcc-ranlib14"
+      - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/gcc-ranlib14"
+      - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin/gcc-ranlib14"
+      - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin/gcc-ranlib14"
+      - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin/gcc-ranlib14"
+      - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin/gcc-ranlib14"
+      - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin/gcc-ranlib14"
+      - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin/gcc-ranlib14"
+      - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin/gcc-ranlib14"
+      - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin/gcc-ranlib14"
+      - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin/gcc-ranlib14"
+      - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin/gcc-ranlib14"
+      - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin/gcc-ranlib14"
+      - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin/gcc-ranlib14"
+      - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin/gcc-ranlib14"
+      - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin/gcc-ranlib14"
+      - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin/gcc-ranlib14"
+      - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin/gcc-ranlib14"
+      - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin/gcc-ranlib14"
+      - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin/gcc-ranlib14"
+      - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin/gcc-ranlib14"
+      - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin/gcc-ranlib14"
+      - "/run/wrappers/bin/gcc-ranlib14"
+      - "/home/lennart/.nix-profile/bin/gcc-ranlib14"
+      - "/nix/profile/bin/gcc-ranlib14"
+      - "/home/lennart/.local/state/nix/profile/bin/gcc-ranlib14"
+      - "/etc/profiles/per-user/lennart/bin/gcc-ranlib14"
+      - "/nix/var/nix/profiles/default/bin/gcc-ranlib14"
+      - "/run/current-system/sw/bin/gcc-ranlib14"
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/gcc-ranlib"
+      - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin/gcc-ranlib"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/gcc-ranlib"
+      - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/gcc-ranlib"
+    found: "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/gcc-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:49 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ"
+      binary: "/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ'
+        
+        Run Build Command(s): /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/cmake -E env VERBOSE=1 /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/make -f Makefile cmTC_c1dd5/fast
+        /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_c1dd5.dir/build.make CMakeFiles/cmTC_c1dd5.dir/build
+        make[1]: Entering directory '/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ'
+        Building CXX object CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o
+        /nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++   -v -o CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-14.3.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0/include/c++/14.3.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --enable-default-pie --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/'
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/cc1plus -quiet -v -D_GNU_SOURCE -U _FORTIFY_SOURCE -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include -idirafter /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed -isystem /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include -isystem /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include -isystem /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include -isystem /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include -isystem /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include -isystem /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include -isystem /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include -isystem /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c1dd5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mno-omit-leaf-frame-pointer -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-clash-protection -fzero-call-used-regs=used-gpr -fstack-protector-strong -fno-strict-overflow -fno-omit-frame-pointer -frandom-seed=i58fhkgjbp --param=ssp-buffer-size=4 -o /tmp/nix-shell-585529-1404501563/cctNPtlm.s
+        GNU C++17 (GCC) version 14.3.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 14.3.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.20-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include"
+        ignoring duplicate directory "/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include"
+        ignoring duplicate directory "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include"
+        ignoring duplicate directory "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include"
+        ignoring nonexistent directory "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../../x86_64-unknown-linux-gnu/include"
+        ignoring duplicate directory "/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include"
+        ignoring duplicate directory "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include
+         /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include
+         /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include
+         /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//x86_64-unknown-linux-gnu
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//backward
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed
+         /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include
+        End of search list.
+        Compiler executable checksum: c4ab9e952f2e55b8edd7bf0f164e9d75
+        COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/'
+         as -v --64 -o CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o /tmp/nix-shell-585529-1404501563/cctNPtlm.s
+        GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_c1dd5
+        /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1dd5.dir/link.txt --verbose=1
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/g++
+        COLLECT_LTO_WRAPPER=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-14.3.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0/include/c++/14.3.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --enable-default-pie --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.3.0 (GCC) 
+        COMPILER_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'cmTC_c1dd5' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib' '-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1dd5.'
+         /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/collect2 -plugin /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell-585529-1404501563/cck7StDv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1dd5 /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../.. -dynamic-linker=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -rpath /nix/store/i58fhkgjbpsr1f7h6zrn1bypj744gpjc-nix-shell/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o
+        collect2 version 14.3.0
+        /nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/ld -plugin /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell-585529-1404501563/cck7StDv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1dd5 /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../.. -dynamic-linker=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -rpath /nix/store/i58fhkgjbpsr1f7h6zrn1bypj744gpjc-nix-shell/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'cmTC_c1dd5' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib' '-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1dd5.'
+        /nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++  -v -Wl,-v CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c1dd5
+        make[1]: Leaving directory '/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:49 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include]
+          add: [/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include]
+          add: [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include]
+          add: [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//x86_64-unknown-linux-gnu]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//backward]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include]
+          add: [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed]
+          add: [/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include]
+        end of search list found
+        collapse include dir [/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include] ==> [/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include]
+        collapse include dir [/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include] ==> [/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include]
+        collapse include dir [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include] ==> [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include]
+        collapse include dir [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include] ==> [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//x86_64-unknown-linux-gnu] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/x86_64-unknown-linux-gnu]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//backward] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/backward]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include]
+        collapse include dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed]
+        collapse include dir [/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include] ==> [/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include]
+        implicit include dirs: [/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include;/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include;/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include;/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/x86_64-unknown-linux-gnu;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/backward;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed;/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:49 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/cmake -E env VERBOSE=1 /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/make -f Makefile cmTC_c1dd5/fast]
+        ignore line: [/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_c1dd5.dir/build.make CMakeFiles/cmTC_c1dd5.dir/build]
+        ignore line: [make[1]: Entering directory '/home/lennart/Documents/conhnsw/faiss/results/CMakeFiles/CMakeScratch/TryCompile-Rw6IOZ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/g++   -v -o CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-14.3.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0/include/c++/14.3.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --enable-default-pie --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/']
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/cc1plus -quiet -v -D_GNU_SOURCE -U _FORTIFY_SOURCE -D _LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include -idirafter /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed -isystem /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include -isystem /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include -isystem /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include -isystem /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include -isystem /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include -isystem /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include -isystem /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include -isystem /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include /nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_c1dd5.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mno-omit-leaf-frame-pointer -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-clash-protection -fzero-call-used-regs=used-gpr -fstack-protector-strong -fno-strict-overflow -fno-omit-frame-pointer -frandom-seed=i58fhkgjbp --param=ssp-buffer-size=4 -o /tmp/nix-shell-585529-1404501563/cctNPtlm.s]
+        ignore line: [GNU C++17 (GCC) version 14.3.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.3.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.20-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include]
+        ignore line: [ /nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include]
+        ignore line: [ /nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include]
+        ignore line: [ /nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0/]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//x86_64-unknown-linux-gnu]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include/c++/14.3.0//backward]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/include]
+        ignore line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed]
+        ignore line: [ /nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: c4ab9e952f2e55b8edd7bf0f164e9d75]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o /tmp/nix-shell-585529-1404501563/cctNPtlm.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_c1dd5]
+        ignore line: [/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1dd5.dir/link.txt --verbose=1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-14.3.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.2/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.40-66-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-14.3.0/include/c++/14.3.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --enable-default-pie --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.3.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/:/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/:/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-fstack-clash-protection' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fzero-call-used-regs=used-gpr' '-D' '_LIBCPP_HARDENING_MODE=_LIBCPP_HARDENING_MODE_EXTENSIVE' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-fno-omit-frame-pointer' '-mno-omit-leaf-frame-pointer' '-v' '-o' 'cmTC_c1dd5' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/' '-idirafter' '/nix/store/gi4cz4ir3zlwhf1azqfgxqdnczfrwsr7-glibc-2.40-66-dev/include' '-idirafter' '/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/include-fixed' '-B' '/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-frandom-seed=i58fhkgjbp' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-isystem' '/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/include' '-isystem' '/nix/store/fbx3rddywlbqj79g7ga95x781bvrihnj-openblas-0.3.30-dev/include' '-isystem' '/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/include' '-isystem' '/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/include' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib' '-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib' '-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib' '-L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib' '-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_c1dd5.']
+        link line: [ /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/collect2 -plugin /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell-585529-1404501563/cck7StDv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1dd5 /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../.. -dynamic-linker=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -rpath /nix/store/i58fhkgjbpsr1f7h6zrn1bypj744gpjc-nix-shell/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o]
+          arg [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/nix-shell-585529-1404501563/cck7StDv.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c1dd5] ==> ignore
+          arg [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o] ==> obj [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o]
+          arg [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o] ==> obj [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o]
+          arg [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o] ==> obj [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o]
+          arg [-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib] ==> dir [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib]
+          arg [-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib] ==> dir [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib]
+          arg [-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib] ==> dir [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib]
+          arg [-L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib] ==> dir [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib]
+          arg [-L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib] ==> dir [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib]
+          arg [-L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib] ==> dir [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib]
+          arg [-L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib] ==> dir [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib]
+          arg [-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0] ==> dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0]
+          arg [-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+          arg [-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+          arg [-L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib] ==> dir [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib]
+          arg [-L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+          arg [-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0] ==> dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0]
+          arg [-L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../..] ==> dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../..]
+          arg [-dynamic-linker=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/nix/store/i58fhkgjbpsr1f7h6zrn1bypj744gpjc-nix-shell/lib] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o] ==> obj [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o]
+          arg [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o] ==> obj [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o]
+        ignore line: [collect2 version 14.3.0]
+        ignore line: [/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/ld -plugin /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/liblto_plugin.so -plugin-opt=/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/libexec/gcc/x86_64-unknown-linux-gnu/14.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell-585529-1404501563/cck7StDv.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib64/ld-linux-x86-64.so.2 -pie -o cmTC_c1dd5 /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib -L/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib -L/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib -L/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0 -L/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../.. -dynamic-linker=/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/ld-linux-x86-64.so.2 -v CMakeFiles/cmTC_c1dd5.dir/CMakeCXXCompilerABI.cpp.o -rpath /nix/store/i58fhkgjbpsr1f7h6zrn1bypj744gpjc-nix-shell/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o /nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o]
+        linker tool for 'CXX': /nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/ld
+        collapse library dir [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib] ==> [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib]
+        collapse library dir [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib] ==> [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib]
+        collapse library dir [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib] ==> [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib]
+        collapse library dir [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib] ==> [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib]
+        collapse library dir [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib] ==> [/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib]
+        collapse library dir [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib] ==> [/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib]
+        collapse library dir [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib] ==> [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib]
+        collapse library dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0]
+        collapse library dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+        collapse library dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+        collapse library dir [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib] ==> [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib]
+        collapse library dir [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib] ==> [/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib]
+        collapse library dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0]
+        collapse library dir [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/../../..] ==> [/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/Scrt1.o;/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crti.o;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtbeginS.o;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0/crtendS.o;/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib/crtn.o]
+        implicit dirs: [/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/lib;/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/lib;/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/lib;/nix/store/xx7cm72qy2c0643cm1ipngd87aqwkcdp-glibc-2.40-66/lib;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib/gcc/x86_64-unknown-linux-gnu/14.3.0;/nix/store/xm08aqdd7pxcdhm0ak6aqb1v7hw5q6ri-gcc-14.3.0-lib/lib;/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:49 (project)"
+    message: |
+      Running the CXX compiler's linker: "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompiler.cmake:54 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCUDACompiler.cmake:38 (_cmake_find_compiler)"
+      - "CMakeLists.txt:89 (enable_language)"
+    mode: "program"
+    variable: "CMAKE_CUDA_COMPILER"
+    description: "CUDA compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+    candidate_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/"
+    searched_directories:
+      - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin/nvcc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2"
+        - "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCUDACompiler.cmake:98 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:89 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is NVIDIA using "" did not match "nvcc: [^
+      ]+ Cuda compiler driver":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:1303 (message)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCUDACompiler.cmake:98 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:89 (enable_language)"
+    message: |
+      Checking whether the CUDA compiler is Clang using "" did not match "(clang version)":
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/Internal/CMakeCUDAFindToolkit.cmake:15 (find_program)"
+      - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/share/cmake-4.1/Modules/CMakeDetermineCUDACompiler.cmake:108 (cmake_cuda_find_toolkit)"
+      - "CMakeLists.txt:89 (enable_language)"
+    mode: "program"
+    variable: "_CUDA_NVCC_EXECUTABLE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nvcc"
+      - "nvcc.exe"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/nix/store/35yc81pz0q5yba14lxhn5r3jx5yg6c3l-bash-interactive-5.3p3/bin"
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2/bin"
+        - "/nix/store/jlv0a6iyh8vb7pfyhjj93xy245xlmgh5-gnumake-4.4.1/bin"
+        - "/nix/store/vr15iyyykg9zai6fpgvhcgyw7gckl78w-gcc-wrapper-14.3.0/bin"
+        - "/nix/store/kzq78n13l8w24jn8bx4djj79k5j717f1-gcc-14.3.0/bin"
+        - "/nix/store/q6wgv06q39bfhx2xl8ysc05wi6m2zdss-glibc-2.40-66-bin/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/xwydcyvlsa3cvssk0y5llgdhlhjvmqdm-binutils-wrapper-2.44/bin"
+        - "/nix/store/dc9vaz50jg7mibk9xvqw5dqv89cxzla3-binutils-2.44/bin"
+        - "/nix/store/8q2582rd22xp8jlcg1xn1w219q5lx5xa-patchelf-0.15.2/bin"
+        - "/nix/store/igbj03s27rllk683dc94hm8s3m0zxji6-openblas-0.3.30/bin"
+        - "/nix/store/drqdrs6kxxbzd1l4vhn4zs0q9vcvdb6y-gflags-2.2.2/bin"
+        - "/nix/store/3lll9y925zz9393sa59h653xik66srjb-python3-3.13.9/bin"
+        - "/nix/store/qbljpi28kpxkjaibg0avqqn6adqcg744-python3.13-numpy-2.3.4/bin"
+        - "/nix/store/x22pw7n7f28lh33zhhx6s3i2pcgn0qag-python3.13-fonttools-4.60.1/bin"
+        - "/nix/store/imad8dvhp77h0pjbckp6wvmnyhp8dpgg-coreutils-9.8/bin"
+        - "/nix/store/av4xw9f56xlx5pgv862wabfif6m1yc0a-findutils-4.10.0/bin"
+        - "/nix/store/20axvl7mgj15m23jgmnq97hx37fgz7bk-diffutils-3.12/bin"
+        - "/nix/store/drc7kang929jaza6cy9zdx10s4gw1z5p-gnused-4.9/bin"
+        - "/nix/store/x3zjxxz8m4ki88axp0gn8q8m6bldybba-gnugrep-3.12/bin"
+        - "/nix/store/y2wdhdcrffp9hnkzk06d178hq3g98jay-gawk-5.3.2/bin"
+        - "/nix/store/yi3c5karhx764ham5rfwk7iynr8mjf6q-gnutar-1.35/bin"
+        - "/nix/store/d471xb7sfbah076s8rx02i68zpxc2r5n-gzip-1.14/bin"
+        - "/nix/store/qm9rxn2sc1vrz91i443rr6f0vxm0zd82-bzip2-1.0.8-bin/bin"
+        - "/nix/store/3fmzbq9y4m9nk235il7scmvwn8j9zy3p-gnumake-4.4.1/bin"
+        - "/nix/store/rlq03x4cwf8zn73hxaxnx0zn5q9kifls-bash-5.3p3/bin"
+        - "/nix/store/qrwznp1ikdf0qw05wia2haiwi32ik5n0-patch-2.8/bin"
+        - "/nix/store/v0rfdwhg6w6i0yb6dbry4srk6pnj3xp0-xz-5.8.1-bin/bin"
+        - "/nix/store/paj6a1lpzp57hz1djm5bs86b7ci221r0-file-5.45/bin"
+        - "/run/wrappers/bin"
+        - "/home/lennart/.nix-profile/bin"
+        - "/nix/profile/bin"
+        - "/home/lennart/.local/state/nix/profile/bin"
+        - "/etc/profiles/per-user/lennart/bin"
+        - "/nix/var/nix/profiles/default/bin"
+        - "/run/current-system/sw/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/nix/store/w9jm660dykns6hzrdhxmqfywnc9ail8g-cmake-4.1.2"
+        - "/usr/local"
+...
