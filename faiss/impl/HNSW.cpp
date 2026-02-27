@@ -7,16 +7,15 @@
 
 #include <faiss/impl/HNSW.h>
 
-#include <cstdlib>
+#include <cinttypes>
 #include <cstddef>
 
 #include <faiss/IndexHNSW.h>
 
-#include <faiss/impl/AuxIndexStructures.h>
 #include <faiss/impl/DistanceComputer.h>
 #include <faiss/impl/IDSelector.h>
 #include <faiss/impl/ResultHandler.h>
-#include <faiss/utils/prefetch.h>
+#include <faiss/impl/VisitedTable.h>
 
 #ifdef __AVX2__
 #include <immintrin.h>
@@ -24,14 +23,6 @@
 #include <limits>
 #include <type_traits>
 #endif
-
-#include <fstream>
-#include <atomic>
-#include <string>
-#include <iostream>
-
-// Global atomic counter to name files uniquely (query_0.txt, query_1.txt...)
-std::atomic<size_t> query_log_counter{0};
 
 namespace faiss {
 
@@ -54,11 +45,15 @@ void HNSW::set_nb_neighbors(int level_no, int n) {
 }
 
 int HNSW::cum_nb_neighbors(int layer_no) const {
+    FAISS_CHECK_RANGE_DEBUG(layer_no, 0, (int)cum_nneighbor_per_level.size());
     return cum_nneighbor_per_level[layer_no];
 }
 
 void HNSW::neighbor_range(idx_t no, int layer_no, size_t* begin, size_t* end)
         const {
+    FAISS_CHECK_RANGE_DEBUG(no, 0, (idx_t)offsets.size());
+    FAISS_CHECK_RANGE_DEBUG(
+            layer_no, 0, (int)cum_nneighbor_per_level.size() - 1);
     size_t o = offsets[no];
     *begin = o + cum_nb_neighbors(layer_no);
     *end = o + cum_nb_neighbors(layer_no + 1);
@@ -416,10 +411,9 @@ void search_neighbors_to_add(
                 if (nodeId < 0) {
                     break;
                 }
-                if (vt.get(nodeId)) {
+                if (!vt.set(nodeId)) {
                     continue;
                 }
-                vt.set(nodeId);
 
                 float dis = qdis(nodeId);
                 NodeDistFarther evE1(dis, nodeId);
@@ -457,10 +451,9 @@ void search_neighbors_to_add(
                 if (nodeId < 0) {
                     break;
                 }
-                if (vt.get(nodeId)) {
+                if (!vt.set(nodeId)) {
                     continue;
                 }
-                vt.set(nodeId);
 
                 buffered_ids[n_buffered] = nodeId;
                 n_buffered += 1;
@@ -632,40 +625,8 @@ int search_from_candidates(
         int level,
         int nres_in,
         const SearchParameters* params) {
-    
     int nres = nres_in;
     int ndis = 0;
-
-    // =========================================================
-    // 1. LOGGING SETUP (Existing)
-    // =========================================================
-    // Only log for the first 100 queries to save disk space/time
-    size_t query_id = query_log_counter.fetch_add(1);
-    std::ofstream log_file;
-    static bool logging_enabled = (std::getenv("HNSW_ENABLE_LOGGING") != nullptr);
-    bool do_log = (level == 0 && query_id < 100 && logging_enabled); 
-    
-    if (do_log) {
-        std::string fname = "results/efficiency/log_q_" + std::to_string(query_id) + ".csv";
-        log_file.open(fname);
-        log_file << "ndis,radius\n";
-    }
-
-    // =========================================================
-    // 2. NAIVE EARLY STOPPING SETUP (New)
-    // =========================================================
-    static bool use_naive_es = [](){
-        const char* s = std::getenv("HNSW_NAIVE_ES");
-        return s && std::atoi(s) == 1;
-    }();
-
-    static int es_patience = [](){
-        const char* s = std::getenv("HNSW_PATIENCE");
-        return s ? std::atoi(s) : 20; // Default patience
-    }();
-
-    int no_improvement_counter = 0;
-    // =========================================================
 
     bool do_dis_check;
     int efSearch;
@@ -716,15 +677,12 @@ int search_from_candidates(
                 break;
             }
 
-            prefetch_L2(vt.visited.data() + v1);
+            vt.prefetch(v1);
             jmax += 1;
         }
 
         int counter = 0;
         size_t saved_j[4];
-        
-        // Track if we improved in this specific expansion step
-        bool improved_in_this_step = false;
 
         threshold = res.threshold;
 
@@ -734,7 +692,6 @@ int search_from_candidates(
                     if (res.add_result(dis, idx)) {
                         threshold = res.threshold;
                         nres += 1;
-                        improved_in_this_step = true;
                     }
                 }
             }
@@ -744,10 +701,8 @@ int search_from_candidates(
         for (size_t j = begin; j < jmax; j++) {
             int v1 = hnsw.neighbors[j];
 
-            bool vget = vt.get(v1);
-            vt.set(v1);
             saved_j[counter] = v1;
-            counter += vget ? 0 : 1;
+            counter += vt.set(v1) ? 1 : 0;
 
             if (counter == 4) {
                 float dis[4];
@@ -777,28 +732,6 @@ int search_from_candidates(
 
             ndis += 1;
         }
-        
-        // --- LOGGING STEP ---
-        if (do_log && log_file.is_open()) {
-            // Write current effort (ndis) and current best radius (threshold)
-            log_file << ndis << "," << threshold << "\n";
-        }
-        // --------------------
-
-        // --- NAIVE EARLY STOPPING CHECK ---
-        // Only run this logic on the base level (where fine-grained search happens)
-        if (use_naive_es && level == 0) {
-            if (improved_in_this_step) {
-                no_improvement_counter = 0; // Reset counter
-            } else {
-                no_improvement_counter++;   // Increment counter
-            }
-
-            if (no_improvement_counter >= es_patience) {
-                break; // Stop the search early!
-            }
-        }
-        // ----------------------------------
 
         nstep++;
         if (!do_dis_check && nstep > efSearch) {
@@ -813,10 +746,6 @@ int search_from_candidates(
         }
         stats.ndis += ndis;
         stats.nhops += nstep;
-    }
-    
-    if (do_log && log_file.is_open()) {
-        log_file.close();
     }
 
     return nres;
@@ -913,9 +842,7 @@ int search_from_candidates_panorama(
                     query_norm_sq + cum_sums_v1[0] * cum_sums_v1[0];
 
             bool is_selected = !sel || sel->is_member(v1);
-            initial_size += is_selected && !vt.get(v1) ? 1 : 0;
-
-            vt.set(v1);
+            initial_size += is_selected && vt.set(v1) ? 1 : 0;
         }
 
         size_t batch_size = initial_size;
@@ -1103,7 +1030,7 @@ std::priority_queue<HNSW::Node> search_from_candidate_unbounded(
                 break;
             }
 
-            prefetch_L2(vt->visited.data() + v1);
+            vt->prefetch(v1);
             jmax += 1;
         }
 
@@ -1125,10 +1052,8 @@ std::priority_queue<HNSW::Node> search_from_candidate_unbounded(
         for (size_t j = begin; j < jmax; j++) {
             int v1 = hnsw.neighbors[j];
 
-            bool vget = vt->get(v1);
-            vt->set(v1);
             saved_j[counter] = v1;
-            counter += vget ? 0 : 1;
+            counter += vt->set(v1) ? 1 : 0;
 
             if (counter == 4) {
                 float dis[4];
