@@ -2,6 +2,9 @@
 nix-shell
 
 # 2. Configure (Disable Python, Enable Optimization)
+
+cd faiss
+
 cmake -B build . \
     -DFAISS_ENABLE_GPU=OFF \
     -DFAISS_ENABLE_PYTHON=OFF \
@@ -10,7 +13,6 @@ cmake -B build . \
 
 # 3. Build the library (libfaiss.a)
 make -C build -j$(nproc) faiss
-
 
 
 

@@ -19,6 +19,7 @@
 #include <faiss/impl/platform_macros.h>
 #include <faiss/utils/Heap.h>
 #include <faiss/utils/random.h>
+#include <faiss/impl/AuxIndexStructures.h>
 
 namespace faiss {
 
@@ -45,6 +46,8 @@ struct IndexHNSWFlatPanorama;
 struct VisitedTable;
 struct DistanceComputer; // from AuxIndexStructures
 struct HNSWStats;
+
+struct HNSWSearchCache;
 
 struct SearchParametersHNSW : SearchParameters {
     int efSearch = 16;
@@ -226,6 +229,14 @@ struct HNSW {
             VisitedTable& vt,
             const SearchParameters* params = nullptr) const;
 
+    HNSWStats search_resume(
+        DistanceComputer& qdis,
+        ResultHandler& res,
+        HNSWSearchCache& cache,
+        int ef,
+        const SearchParameters* params = nullptr) const;
+
+
     void reset();
 
     void clear_neighbor_tables(int level);
@@ -242,6 +253,21 @@ struct HNSW {
 
     void permute_entries(const idx_t* map);
 };
+
+struct HNSWSearchCache {
+    HNSW::MinimaxHeap candidates;    // Add HNSW:: prefix
+    VisitedTable vt;
+    bool initialized = false;
+
+    std::vector<float> topk_distances;
+    std::vector<idx_t> topk_labels;
+
+    explicit HNSWSearchCache(int max_candidates)
+        : candidates(max_candidates),
+          vt(0),
+          initialized(false) {}
+};
+
 
 struct HNSWStats {
     size_t n1 = 0; /// number of vectors searched

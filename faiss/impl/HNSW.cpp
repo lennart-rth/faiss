@@ -1323,6 +1323,75 @@ HNSWStats HNSW::search(
     return stats;
 }
 
+HNSWStats HNSW::search_resume(
+        DistanceComputer& qdis,
+        ResultHandler& res,
+        HNSWSearchCache& cache,
+        int ef,
+        const SearchParameters* params) const {
+
+    HNSWStats stats;
+
+    if (!cache.initialized) {
+
+        cache.vt.advance();
+
+        // greedy upper layer descent
+        storage_idx_t nearest = entry_point;
+        float d_nearest = qdis(nearest);
+
+        // greedy descent upper levels
+        for (int level = max_level; level >= 1; level--) {
+            greedy_update_nearest(
+                *this, qdis, level, nearest, d_nearest);
+        }
+
+        cache.candidates.clear();
+        cache.candidates.push(nearest, d_nearest);
+        cache.vt.set(nearest);
+
+        cache.initialized = true;
+    }
+
+    while (cache.candidates.size() > 0) {
+
+        float d0;
+        storage_idx_t v0 = cache.candidates.pop_min(&d0);
+
+        int n_dis_below = cache.candidates.count_below(d0);
+        if (n_dis_below >= ef) {
+            cache.candidates.push(v0, d0);
+            break;
+        }
+
+        size_t begin, end;
+        neighbor_range(v0, 0, &begin, &end);
+
+        for (size_t j = begin; j < end; j++) {
+
+            storage_idx_t v1 = neighbors[j];
+            if (v1 < 0) break;
+
+            if (cache.vt.get(v1))
+                continue;
+
+            cache.vt.set(v1);
+
+            float dis = qdis(v1);
+
+            if (dis < res.threshold) {
+                res.add_result(dis, v1);
+            }
+
+            cache.candidates.push(v1, dis);
+        }
+
+        stats.nhops++;
+    }
+
+    return stats;
+}
+
 void HNSW::search_level_0(
         DistanceComputer& qdis,
         ResultHandler& res,

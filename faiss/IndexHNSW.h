@@ -82,6 +82,10 @@ struct IndexHNSW : Index {
 
     void reconstruct(idx_t key, float* recons) const override;
 
+    HNSWStats search_resume(
+        idx_t n, const float* x, idx_t k, float* distances, idx_t* labels, 
+        std::vector<HNSWSearchCache*>& caches, const SearchParameters* params = nullptr) const;
+
     void reset() override;
 
     void shrink_level_0_neighbors(int size);
@@ -130,6 +134,11 @@ struct IndexHNSW : Index {
 struct IndexHNSWFlat : IndexHNSW {
     IndexHNSWFlat();
     IndexHNSWFlat(int d, int M, MetricType metric = METRIC_L2);
+
+    HNSWStats search_resume(
+        idx_t n, const float* x, idx_t k, float* distances, idx_t* labels,
+        std::vector<HNSWSearchCache*>& caches, const SearchParameters* params = nullptr) const;
+
 };
 
 /** Panorama implementation of IndexHNSWFlat following
@@ -173,6 +182,11 @@ struct IndexHNSWFlatPanorama : IndexHNSWFlat {
     const float* get_cum_sum(idx_t i) const {
         return cum_sums.data() + i * (pano.n_levels + 1);
     }
+
+    HNSWStats search_resume(
+        idx_t n, const float* x, idx_t k, float* distances, idx_t* labels, 
+        std::vector<HNSWSearchCache*>& caches, const SearchParameters* params = nullptr) const;
+
 
     std::vector<float> cum_sums;
     Panorama pano;

@@ -292,6 +292,90 @@ void hnsw_search(
 
 } // anonymous namespace
 
+
+namespace {
+    // Custom ResultHandler that DOES NOT wipe the arrays on initialization
+    struct ResumeSingleResultHandler : public ResultHandler {
+        int k;
+        float* heap_dis;
+        idx_t* heap_ids;
+
+        ResumeSingleResultHandler(int k, float* dis, idx_t* ids) 
+            : k(k), heap_dis(dis), heap_ids(ids) {
+            // The worst distance in the max-heap is always at index 0
+            threshold = heap_dis[0];
+        }
+
+        bool add_result(float dis, idx_t id) override {
+            if (dis < threshold) {
+                faiss::heap_replace_top<HNSW::C>(k, heap_dis, heap_ids, dis, id);
+                threshold = heap_dis[0];
+                return true;
+            }
+            return false;
+        }
+    };
+} // anonymous namespace
+
+// -------------------------------------------------------------
+// Incremental search for IndexHNSW
+// -------------------------------------------------------------
+HNSWStats IndexHNSW::search_resume(
+        idx_t n, const float* x, idx_t k, float* distances, idx_t* labels, 
+        std::vector<HNSWSearchCache*>& caches, const SearchParameters* params) const {
+
+    // Safely resize VisitedTable for each query
+    for (idx_t i = 0; i < n; i++) {
+        if (caches[i]->vt.visited.size() < ntotal) {
+            caches[i]->vt.visited.resize(ntotal, 0);
+        }
+    }
+        
+    HNSWStats total_stats;
+    size_t total_n1 = 0, total_n2 = 0, total_ndis = 0, total_nhops = 0;
+
+#pragma omp parallel
+    {
+        std::unique_ptr<DistanceComputer> dis(storage_distance_computer(storage));
+
+#pragma omp for reduction(+ : total_n1, total_n2, total_ndis, total_nhops)
+        for (idx_t i = 0; i < n; i++) {
+            dis->set_query(x + i * d);
+            
+            HNSWSearchCache& cache = *(caches[i]);
+
+            if (!cache.initialized) {
+                cache.topk_distances.resize(k);
+                cache.topk_labels.resize(k);
+                faiss::heap_heapify<HNSW::C>(k, cache.topk_distances.data(), cache.topk_labels.data());
+                // cache.initialized is set to true inside the hnsw.search_resume function
+            }
+
+            ResumeSingleResultHandler res(k, cache.topk_distances.data(), cache.topk_labels.data());
+
+            // int ef = std::max(hnsw.efSearch, k);
+
+            HNSWStats stats = hnsw.search_resume(*dis, res, cache, hnsw.efSearch, params);
+            
+            std::memcpy(distances + i * k, cache.topk_distances.data(), k * sizeof(float));
+            std::memcpy(labels + i * k, cache.topk_labels.data(), k * sizeof(idx_t));
+            faiss::heap_reorder<HNSW::C>(k, distances + i * k, labels + i * k);
+
+            total_n1 += stats.n1;
+            total_n2 += stats.n2;
+            total_ndis += stats.ndis;
+            total_nhops += stats.nhops;
+        }
+    }
+
+    total_stats.n1 = total_n1;
+    total_stats.n2 = total_n2;
+    total_stats.ndis = total_ndis;
+    total_stats.nhops = total_nhops;
+
+    return total_stats;
+}
+
 void IndexHNSW::search(
         idx_t n,
         const float* x,
@@ -657,6 +741,22 @@ IndexHNSWFlat::IndexHNSWFlat(int d, int M, MetricType metric)
     is_trained = true;
 }
 
+// --------------------------------------------
+// Resumable search
+// --------------------------------------------
+HNSWStats IndexHNSWFlat::search_resume(
+        idx_t n,
+        const float* x,
+        idx_t k,
+        float* distances,
+        idx_t* labels,
+        std::vector<HNSWSearchCache*>& caches,
+        const SearchParameters* params) const {
+    // delegate to base IndexHNSW
+    return IndexHNSW::search_resume(n, x, k, distances, labels, caches, params);
+}
+
+
 /**************************************************************
  * IndexHNSWFlatPanorama implementation
  **************************************************************/
@@ -683,6 +783,27 @@ IndexHNSWFlatPanorama::IndexHNSWFlatPanorama(
     // HNSW and overriding the search logic.
     hnsw.is_panorama = true;
 }
+
+/**************************************************************
+ * Resumable search / incremental construction for IndexHNSWFlatPanorama
+ **************************************************************/
+
+HNSWStats IndexHNSWFlatPanorama::search_resume(
+        idx_t n,
+        const float* x,
+        idx_t k,
+        float* distances,
+        idx_t* labels,
+        std::vector<HNSWSearchCache*>& caches,
+        const SearchParameters* params) const {
+
+    std::vector<float> query_cum_sums(n * (pano.n_levels + 1));
+    // compute cumulative sums first
+    pano.compute_cumulative_sums(query_cum_sums.data(), 0, n, x);
+    // delegate to base HNSW
+    return IndexHNSW::search_resume(n, x, k, distances, labels, caches, params);
+}
+
 
 void IndexHNSWFlatPanorama::add(idx_t n, const float* x) {
     idx_t n0 = ntotal;
