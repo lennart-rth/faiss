@@ -650,22 +650,31 @@ int search_from_candidates(
         log_file << "ndis,radius\n";
     }
     // ---------------------
-
-    // --- EXPERIMENT: NAIVE EARLY STOPPING SETUP ---
-    // 1. Check if Naive ES is enabled via Env Var (0 or 1)
-    static bool use_naive_es = [](){
-        const char* s = std::getenv("HNSW_NAIVE_ES");
-        return s && std::atoi(s) == 1;
+    // Read termination parameters from environment variables once per run
+    std::string term_method = []() {
+        const char* s = std::getenv("HNSW_TERMINATION_METHOD");
+        return s ? std::string(s) : "ef_search"; // Options: ef_search, patience, hardlimit, radiuslimit
     }();
 
-    // 2. Read Patience (default to something safe like 1000 if not set)
-    static int es_patience = [](){
+    int patience_val = []() {
         const char* s = std::getenv("HNSW_PATIENCE");
-        return s ? std::atoi(s) : 20; // Default patience 20
+        return s ? std::atoi(s) : 20; 
     }();
 
-    // 3. Initialize counter
+    int hardlimit_nodes = []() {
+        const char* s = std::getenv("HNSW_HARDLIMIT_MAX_NODES");
+        return s ? std::atoi(s) : 0; 
+    }();
+
+    float radius_limit = []() {
+        const char* s = std::getenv("HNSW_RADIUSLIMIT_RADIUS");
+        return s ? std::atof(s) : 0.0f;
+    }();
+
+    // Trackers for patience termination
     int no_improvement_counter = 0;
+    bool top_k_improved = false;
+    // ====================================================
     // ----------------------------------------------
 
     bool do_dis_check;
@@ -693,17 +702,22 @@ int search_from_candidates(
     while (candidates.size() > 0) {
         float d0 = 0;
         int v0 = candidates.pop_min(&d0);
-
-        if (do_dis_check) {
-            // tricky stopping condition: there are more that ef
-            // distances that are processed already that are smaller
-            // than d0
-
-            int n_dis_below = candidates.count_below(d0);
-            if (n_dis_below >= efSearch) {
+        // === NEW: PRE-EVALUATION TERMINATION CHECKS ===
+        if (term_method == "radiuslimit") {
+            // Stop immediately if the closest unexplored candidate is strictly outside the radius cutoff
+            if (d0 > radius_limit) {
                 break;
             }
+        } else if (term_method == "ef_search") {
+            // Standard FAISS behavior
+            if (do_dis_check) {
+                int n_dis_below = candidates.count_below(d0);
+                if (n_dis_below >= efSearch) {
+                    break;
+                }
+            }
         }
+        // ==============================================
 
         size_t begin, end;
         hnsw.neighbor_range(v0, level, &begin, &end);
@@ -725,6 +739,7 @@ int search_from_candidates(
         size_t saved_j[4];
 
         threshold = res.threshold;
+        top_k_improved = false;
 
         auto add_to_heap = [&](const size_t idx, const float dis) {
             if (!sel || sel->is_member(idx)) {
@@ -732,6 +747,7 @@ int search_from_candidates(
                     if (res.add_result(dis, idx)) {
                         threshold = res.threshold;
                         nres += 1;
+                        top_k_improved = true;
                     }
                 }
             }
@@ -783,9 +799,28 @@ int search_from_candidates(
         // --------------------
 
         nstep++;
-        if (!do_dis_check && nstep > efSearch) {
-            break;
+
+        if (term_method == "patience") {
+            if (top_k_improved) {
+                no_improvement_counter = 0; // Reset patience if we found a better node
+            } else {
+                no_improvement_counter++;
+                if (no_improvement_counter >= patience_val) {
+                    break; // Saturated: Break loop early
+                }
+            }
+        } else if (term_method == "hardlimit") {
+            // Strict node visit budget
+            if (hardlimit_nodes > 0 && nstep >= hardlimit_nodes) {
+                break;
+            }
+        } else if (term_method == "ef_search") {
+            // Standard FAISS fallback limit
+            if (!do_dis_check && nstep > efSearch) {
+                break;
+            }
         }
+
     }
 
     if (level == 0) {
@@ -817,6 +852,14 @@ int search_from_candidates_panorama(
         const SearchParameters* params) {
     int nres = nres_in;
     int ndis = 0;
+
+    std::string term_method = []() { const char* s = std::getenv("HNSW_TERMINATION_METHOD"); return s ? std::string(s) : "ef_search"; }();
+    int patience_val = []() { const char* s = std::getenv("HNSW_PATIENCE"); return s ? std::atoi(s) : 20; }();
+    int hardlimit_nodes = []() { const char* s = std::getenv("HNSW_HARDLIMIT_MAX_NODES"); return s ? std::atoi(s) : 0; }();
+    float radius_limit = []() { const char* s = std::getenv("HNSW_RADIUSLIMIT_RADIUS"); return s ? std::atof(s) : 0.0f; }();
+
+    int no_improvement_counter = 0;
+    bool top_k_improved = false;
 
     bool do_dis_check;
     int efSearch;
@@ -865,14 +908,14 @@ int search_from_candidates_panorama(
         float d0 = 0;
         int v0 = candidates.pop_min(&d0);
 
-        if (do_dis_check) {
-            // tricky stopping condition: there are more than ef
-            // distances that are processed already that are smaller
-            // than d0
-
-            int n_dis_below = candidates.count_below(d0);
-            if (n_dis_below >= efSearch) {
-                break;
+        if (term_method == "radiuslimit") {
+            if (d0 > radius_limit) break;
+        } else if (term_method == "ef_search") {
+            if (do_dis_check) {
+                int n_dis_below = candidates.count_below(d0);
+                if (n_dis_below >= efSearch) {
+                    break;
+                }
             }
         }
 
@@ -1019,19 +1062,33 @@ int search_from_candidates_panorama(
             curr_panorama_level++;
         }
 
+        top_k_improved = false;
+
         // Add surviving candidates to the result handler.
         for (size_t i = 0; i < batch_size; i++) {
             idx_t idx = index_array[i];
             if (res.add_result(exact_distances[i], idx)) {
                 nres += 1;
+                top_k_improved = true;
             }
             candidates.push(idx, exact_distances[i]);
         }
 
         nstep++;
-        if (!do_dis_check && nstep > efSearch) {
-            break;
+
+        if (term_method == "patience") {
+            if (top_k_improved) {
+                no_improvement_counter = 0;
+            } else {
+                no_improvement_counter++;
+                if (no_improvement_counter >= patience_val) break;
+            }
+        } else if (term_method == "hardlimit") {
+            if (hardlimit_nodes > 0 && nstep >= hardlimit_nodes) break;
+        } else if (term_method == "ef_search") {
+            if (!do_dis_check && nstep > efSearch) break;
         }
+
     }
 
     if (level == 0) {
@@ -1332,6 +1389,16 @@ HNSWStats HNSW::search_resume(
 
     HNSWStats stats;
 
+    std::string term_method = []() { 
+        const char* s = std::getenv("HNSW_TERMINATION_METHOD"); 
+        return s ? std::string(s) : "ef_search"; 
+    }();
+
+    int hardlimit_nodes = []() { 
+        const char* s = std::getenv("HNSW_HARDLIMIT_MAX_NODES"); 
+        return s ? std::atoi(s) : 0; 
+    }();
+
     if (!cache.initialized) {
 
         cache.vt.advance();
@@ -1353,15 +1420,20 @@ HNSWStats HNSW::search_resume(
         cache.initialized = true;
     }
 
+    int nstep = 0;
+
     while (cache.candidates.size() > 0) {
 
         float d0;
         storage_idx_t v0 = cache.candidates.pop_min(&d0);
 
-        int n_dis_below = cache.candidates.count_below(d0);
-        if (n_dis_below >= ef) {
-            cache.candidates.push(v0, d0);
-            break;
+        if (term_method == "ef_search") {
+            int n_dis_below = cache.candidates.count_below(d0);
+            if (n_dis_below >= ef) {
+                // Put the unexpanded node back into the cache so it can be resumed later
+                cache.candidates.push(v0, d0);
+                break;
+            }
         }
 
         size_t begin, end;
@@ -1387,6 +1459,13 @@ HNSWStats HNSW::search_resume(
         }
 
         stats.nhops++;
+        nstep++;
+
+        if (term_method == "hardlimit") {
+            if (hardlimit_nodes > 0 && nstep >= hardlimit_nodes) {
+                break;
+            }
+        }
     }
 
     return stats;

@@ -22,6 +22,7 @@ add_executable(sample sample.cpp)
 # add_executable(calibrate calibrate.cpp)
 # add_executable(search search.cpp)
 add_executable(simple simple_hnsw.cpp)
+add_executable(termination_calibration termination_calibration.cpp)
 add_executable(conHNSW run_conHNSW.cpp)
 add_executable(hnsw_cached_benchmarks hnsw_cached_benchmarks.cpp)
 
@@ -43,6 +44,13 @@ target_link_libraries(latency_recall
 )
 
 target_link_libraries(sample 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(termination_calibration 
     PRIVATE 
     "${FAISS_ROOT}/build/faiss/libfaiss.a" 
     ${BLAS_LIB}
