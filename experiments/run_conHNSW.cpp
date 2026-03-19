@@ -247,29 +247,66 @@ std::vector<float> generate_exponential_sweep(int start_val, int max_val, float 
 
 int main(int argc, char* argv[]) {
     if (argc < 3) {
-        std::cerr << "Usage: " << argv[0] << " <k> <alpha> [--term_method ef_search|patience|hardlimit|radiuslimit]" << std::endl;
+        std::cerr << "Usage: " << argv[0] << " <k> <alpha> [--term_method ef_search|patience|hardlimit|radiuslimit] [--dataset dataset_name]" << std::endl;
         return 1;
     }
 
     int k = std::stoi(argv[1]);
     float target_alpha = std::stof(argv[2]);
     std::string term_method = get_arg_str(argc, argv, "--term_method", "ef_search");
+    
+    std::string dataset = get_arg_str(argc, argv, "--dataset", "sift");
 
+    // Dimensions and counts for Calib and Test (Query)
     size_t d_base, nb, d_q_calib, nq_calib, d_gt_calib, n_gt_calib;
     size_t d_q_test, nq_test, d_gt_test, n_gt_test;
+    
+    // NEW: Dimensions and counts for Raps
+    size_t d_q_raps, nq_raps, d_gt_raps, n_gt_raps;
 
     // -------------------------------------------------------------
-    // STEP 1: Load All Datasets
+    // STEP 1: Load All Datasets (Dynamically Constructed)
     // -------------------------------------------------------------
-    std::cerr << "1. Loading Datasets..." << std::endl;
-    float* xb = vecs_read<float>("../sift1M/sift_base.fvecs", &d_base, &nb);
-    float* calib_queries = vecs_read<float>("../sift1M/sift_query_calib.fvecs", &d_q_calib, &nq_calib);
-    int* calib_gt = vecs_read<int>("../sift1M/sift_groundtruth_calib.ivecs", &d_gt_calib, &n_gt_calib);
-    float* test_queries = vecs_read<float>("../sift1M/sift_query.fvecs", &d_q_test, &nq_test);
-    int* test_gt = vecs_read<int>("../sift1M/sift_groundtruth.ivecs", &d_gt_test, &n_gt_test);
+    std::cerr << "1. Loading Datasets for: " << dataset << "..." << std::endl;
+    
+    // Construct new file paths
+    std::string base_path     = "../" + dataset + "/" + dataset + "_base.fvecs";
+    
+    // Calib is now the old query_calib
+    std::string q_calib_path  = "../" + dataset + "/" + dataset + "_calib.fvecs";
+    std::string gt_calib_path = "../" + dataset + "/" + dataset + "_calib_gt.ivecs"; 
+    
+    // Query is now the test set
+    std::string q_test_path   = "../" + dataset + "/" + dataset + "_query.fvecs";
+    std::string gt_test_path  = "../" + dataset + "/" + dataset + "_query_gt.ivecs";
+    
+    // NEW: Raps dataset
+    std::string q_raps_path   = "../" + dataset + "/" + dataset + "_raps.fvecs";
+    std::string gt_raps_path  = "../" + dataset + "/" + dataset + "_raps_gt.ivecs";
 
-    if (!xb || !calib_queries || !calib_gt || !test_queries || !test_gt) {
-        std::cerr << "Failed to load one or more files. Check paths." << std::endl;
+    // Read the files into memory
+    float* xb = vecs_read<float>(base_path.c_str(), &d_base, &nb);
+    
+    float* calib_queries = vecs_read<float>(q_calib_path.c_str(), &d_q_calib, &nq_calib);
+    int* calib_gt = vecs_read<int>(gt_calib_path.c_str(), &d_gt_calib, &n_gt_calib);
+    
+    float* test_queries = vecs_read<float>(q_test_path.c_str(), &d_q_test, &nq_test);
+    int* test_gt = vecs_read<int>(gt_test_path.c_str(), &d_gt_test, &n_gt_test);
+    
+    // Read the newly requested Raps dataset (Loaded but not actively used in search yet)
+    float* raps_queries = vecs_read<float>(q_raps_path.c_str(), &d_q_raps, &nq_raps);
+    int* raps_gt = vecs_read<int>(gt_raps_path.c_str(), &d_gt_raps, &n_gt_raps);
+
+    // Validate that all files loaded successfully
+    if (!xb || !calib_queries || !calib_gt || !test_queries || !test_gt || !raps_queries || !raps_gt) {
+        std::cerr << "Failed to load one or more files. Checked paths:" << std::endl;
+        std::cerr << "  - " << base_path << std::endl;
+        std::cerr << "  - " << q_calib_path << std::endl;
+        std::cerr << "  - " << gt_calib_path << std::endl;
+        std::cerr << "  - " << q_test_path << std::endl;
+        std::cerr << "  - " << gt_test_path << std::endl;
+        std::cerr << "  - " << q_raps_path << std::endl;
+        std::cerr << "  - " << gt_raps_path << std::endl;
         return -1;
     }
 
@@ -519,11 +556,18 @@ int main(int argc, char* argv[]) {
     std::cout << target_alpha << "," << best_lambda << "," << time_taken << ","
               << avg_param << "," << empirical_fnr << std::endl;
 
+    // -------------------------------------------------------------
+    // MEMORY CLEANUP
+    // -------------------------------------------------------------
     delete[] xb;
     delete[] calib_queries;
     delete[] calib_gt;
     delete[] test_queries;
     delete[] test_gt;
+    
+    // NEW: Clean up the raps dataset
+    delete[] raps_queries;
+    delete[] raps_gt;
 
     return 0;
 }
