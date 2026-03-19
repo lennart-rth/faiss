@@ -15,6 +15,9 @@ pkgs.mkShell {
     python3Packages.matplotlib
     python3Packages.pandas
     python3Packages.seaborn
+    python3Packages.requests
+    python313Packages.transformers
+
   ];
 
 }

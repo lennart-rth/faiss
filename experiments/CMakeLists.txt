@@ -19,6 +19,7 @@ find_library(BLAS_LIB openblas) # On NixOS, typically libopenblas
 add_executable(efficiency efficiency.cpp)
 add_executable(latency_recall latency_recall.cpp)
 add_executable(sample sample.cpp)
+add_executable(ground_truth ground_truth.cpp)
 # add_executable(calibrate calibrate.cpp)
 # add_executable(search search.cpp)
 add_executable(simple simple_hnsw.cpp)
@@ -44,6 +45,13 @@ target_link_libraries(latency_recall
 )
 
 target_link_libraries(sample 
+    PRIVATE 
+    "${FAISS_ROOT}/build/faiss/libfaiss.a" 
+    ${BLAS_LIB}
+    OpenMP::OpenMP_CXX
+)
+
+target_link_libraries(ground_truth 
     PRIVATE 
     "${FAISS_ROOT}/build/faiss/libfaiss.a" 
     ${BLAS_LIB}

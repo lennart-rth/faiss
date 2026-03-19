@@ -27,3 +27,5 @@ sift1M/
 build/
 sift.tar.gz
 *.bin
+*.fvecs
+*.ivecs
